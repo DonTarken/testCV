@@ -7,6 +7,11 @@
     p{
         max-width: 500px;
     }
+    .menu_hamburger{
+        width: 100%;
+        min-height: 76px !important;
+        background-color: #1c262b;
+    }
 
 }
 
