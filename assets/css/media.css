@@ -1,67 +1,12 @@
-/* TABLETS */
-@media screen and (min-width: 768px) {
-
-    /* TYPOGRAPHY */
-    h1 {
-        font-size: 3em;
-        letter-spacing: -4px;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    h3 {
-        font-size: 1.4em;
-        line-height: 1.3;
-        letter-spacing: -1px;
-    }
-
-    h4 {
-        font-size: 1.0em;
-    }
-
-
-}
-
-
 /* TABLETS and up but not phone landscape  */
-@media screen and (min-width: 768px) and (min-height: 520px) {
+@media screen and (max-width: 768px) {
 
-}
-
-
-/* DESKTOPS OLD */
-@media screen and (min-width: 992px) {
-
-  
-
-}
-
-
-
-/* DESKTOPS MEDIUM */
-@media screen and (min-width: 1200px) {
-
-    /* TYPOGRAPHY */
-    h1 {
-        font-size: 4em;
-        line-height: 1;
+    .wrapper{
+        flex-direction: column;
+    }
+    p{
+        max-width: 500px;
     }
 
 }
 
-
-
-/* DESKTOPS LARGE */
-@media screen and (min-width: 1400px) {
-
-}
-
-
-
-/* DESKTOPS EXTRA LARGE */
-@media screen and (min-width: 1660px) {
-
-
-}

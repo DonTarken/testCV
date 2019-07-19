@@ -11,12 +11,15 @@ $resume.classList.add('collapsed');
 $contact.classList.add('collapsed');
 
 history.replaceState(null, null, ' ');
-// window.location.hash = "";
-// window.location.href.substr(0, window.location.href.indexOf('#'))
-// window.location.href.split('#')[0]
-
 colorMenu()
+function animation(){
+    if ($about.classList.contains('collapsed')) {
+        $about.classList.toggle('collapsed');
+        $resume.classList.add('collapsed');
+        $contact.classList.add('collapsed');
 
+    }
+}
 $aboutToggle.addEventListener('click', () => {
     if ($about.classList.contains('collapsed')) {
         $about.classList.toggle('collapsed');
@@ -42,27 +45,27 @@ $contactToggle.addEventListener('click', () => {
 
 window.addEventListener("hashchange", colorMenu);
 
-function colorMenu(){
+function colorMenu() {
     switch (window.location.hash) {
         case "#about":
             $aboutToggle.style.color = 'white';
             $resumeToggle.style.color = '';
             $contactToggle.style.color = '';
-        break;
+            break;
         case "#resume":
             $aboutToggle.style.color = '';
             $resumeToggle.style.color = 'white';
             $contactToggle.style.color = '';
-        break;
+            break;
         case "#contact":
             $aboutToggle.style.color = '';
             $resumeToggle.style.color = '';
             $contactToggle.style.color = 'white';
-        break;
+            break;
         default:
             $aboutToggle.style.color = 'white';
             $resumeToggle.style.color = '';
             $contactToggle.style.color = '';
-    
+
     }
 }

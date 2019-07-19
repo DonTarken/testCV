@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
 *, *::before, *::after{
     margin: 0;
@@ -9,14 +9,20 @@ html, body {
     height: 100%;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    font-size: 800;
 }
-body{
+.wrapper{
+    height: 100%;
     display: flex;
 }
+/* body{
+    display: flex;
+} */
 header{
     min-width: 140px;
     height: 100%;
     background-color: #1c262b;
+    /* position: absolute; */
 }
 header h1{
     font-size: 12px;
@@ -81,15 +87,17 @@ main{
 .navbar{
     height: 100%;
     transition: height 0.5s;
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    overflow-y: auto ;
+    overflow-y: scroll;
     scroll-behavior: smooth !important;
 }
-
+section{
+    overflow-y:scroll;
+}
 #about h1, #resume h1, #contact h1{
     font-size: 4em;
     font-weight: bold;
@@ -97,7 +105,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #334455;
+    /* color: #334455; */
+    margin-top: 75px;
+    padding: .6em 0;
     /* border: 1px solid black; */
 }
 #about h1 img, #resume h1 img, #contact h1 img{
@@ -108,21 +118,41 @@ main{
 
 #about{
     background-color: #ecf0f0;
+    color: #334455;
 }
 #resume{
     background-color: #ebf0df;
+    color: #334455;
 }
 #contact{
     background-color: #244d62;
+    color: #ecf0f0 !important;
 }
 
 .collapsed{
     height: 0;
-    overflow: hidden !important;
     transition: height 0.5s;
-
 }
 p{
     max-width: 700px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* .navbar::-webkit-scrollbar {
+    width: 0.8em;
 }
 
+.navbar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+.navbar::-moz-scrollbar {
+    width: 0.8em;
+}
+
+.navbar::-moz-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+} */
