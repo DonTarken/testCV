@@ -25,6 +25,7 @@ header{
     min-width: 140px;
     height: 100%;
     background-color: #1c262b;
+    overflow: auto;
     /* position: absolute; */
 }
 header h1{

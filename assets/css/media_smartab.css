@@ -24,6 +24,7 @@ header{
     width: 0px;
     /* border: 1px solid yellow; */
     transition: width 0.5s;
+    overflow: auto;
 }
 .test{
     width: 140px;
