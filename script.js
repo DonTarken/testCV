@@ -69,3 +69,10 @@ function colorMenu() {
 
     }
 }
+
+let $ham = document.querySelector('.menu_hamburger i img');
+let $test = document.querySelector('.wrapper header');
+$test.className = '';
+$ham.addEventListener('click', ()=>{
+    $test.classList.toggle('test');
+})

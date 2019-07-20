@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 800;
+}
+.menu_hamburger{
+    display: none;
+}
+.wrapper{
+    height: 100%;
+    display: flex;
+}
+/* body{
+    display: flex;
+} */
+header{
+    min-width: 140px;
+    height: 100%;
+    background-color: #1c262b;
+    /* position: absolute; */
+}
+header h1{
+    font-size: 12px;
+
+    text-align: center;
+    background-color: #2ba163;
+    color: white;
+    margin: 0;
+    line-height: 20px;
+    padding: 5px 0 5px 0;
+}
+header img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+header ul li{
+    display: block;
+    min-height: 38px;
+    color: white;
+    width: 100%;
+    border-bottom: 1px solid rgba(225, 246, 255, 0.07);
+}
+header ul li a{
+    display: block;
+    min-height: 38px;
+    color: rgba(225, 246, 255, 0.45);
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.hideColorMenu{
+    color: white;
+}
+header ul li a:hover{
+    color: rgba(225, 246, 255, 0.80);
+}
+header ul li a img{
+    height: 28px;
+    width: 28px;
+}
+main{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    height: 100%;
+    transition: height 0.5s;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
+}
+section{
+    overflow-y:scroll;
+}
+#about h1, #resume h1, #contact h1{
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: -4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    padding: .6em 0;
+    /* border: 1px solid black; */
+}
+#about h1 img, #resume h1 img, #contact h1 img{
+    height: 50px;
+    width: 46px;
+    /* border: 1px solid black; */
+}
+
+#about{
+    background-color: #ecf0f0;
+    color: #334455;
+}
+#resume{
+    background-color: #ebf0df;
+    color: #334455;
+}
+#contact{
+    background-color: #244d62;
+    color: #ecf0f0 !important;
+}
+
+.collapsed{
+    height: 0;
+    transition: height 0.5s;
+}
+p{
+    max-width: 700px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* .navbar::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+.navbar::-moz-scrollbar {
+    width: 0.8em;
+}
+
+.navbar::-moz-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+} */
