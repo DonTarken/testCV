@@ -2,9 +2,11 @@ let $aboutToggle = document.querySelector('#about-toggle');
 let $resumeToggle = document.querySelector('#resume-toggle');
 let $contactToggle = document.querySelector('#contact-toggle');
 
-let $about = document.querySelector('#about');
-let $resume = document.querySelector('#resume');
-let $contact = document.querySelector('#contact');
+let $about = document.querySelector('.about');
+let $resume = document.querySelector('.resume');
+let $contact = document.querySelector('.contact');
+
+
 
 
 $resume.classList.add('collapsed');

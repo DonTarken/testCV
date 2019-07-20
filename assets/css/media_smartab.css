@@ -123,7 +123,7 @@ main{
 
 .navbar{
     height: 100%;
-    transition: height 0.5s;
+    transition: height 0.8s;
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ main{
 section{
     overflow-y:scroll;
 }
-#about h1, #resume h1, #contact h1{
+.about h1, .resume h1, .contact h1{
     font-size: 3em;
     font-weight: bold;
     letter-spacing: -4px;
@@ -146,28 +146,28 @@ section{
     padding: .6em 0;
     /* border: 1px solid black; */
 }
-#about h1 img, #resume h1 img, #contact h1 img{
+.about h1 img, .resume h1 img, .contact h1 img{
     height: 50px;
     width: 46px;
     /* border: 1px solid black; */
 }
 
-#about{
+.about{
     background-color: #ecf0f0;
     color: #334455;
 }
-#resume{
+.resume{
     background-color: #ebf0df;
     color: #334455;
 }
-#contact{
+.contact{
     background-color: #244d62;
     color: #ecf0f0 !important;
 }
 
 .collapsed{
     height: 0;
-    transition: height 0.5s;
+    transition: height 1s;
 }
 p{
     max-width: 90%;
