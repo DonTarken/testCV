@@ -136,7 +136,7 @@ section{
     overflow-y:scroll;
 }
 .about h1, .resume h1, .contact h1{
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     letter-spacing: -4px;
     display: flex;
