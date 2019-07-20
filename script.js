@@ -13,12 +13,10 @@ $contact.classList.add('collapsed');
 history.replaceState(null, null, ' ');
 colorMenu()
 function animation(){
-    if ($about.classList.contains('collapsed')) {
         $about.classList.toggle('collapsed');
         $resume.classList.add('collapsed');
         $contact.classList.add('collapsed');
         $test.classList.remove('test');
-    }
 }
 $aboutToggle.addEventListener('click', () => {
     if ($about.classList.contains('collapsed')) {
