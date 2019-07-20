@@ -17,7 +17,7 @@ function animation(){
         $about.classList.toggle('collapsed');
         $resume.classList.add('collapsed');
         $contact.classList.add('collapsed');
-        $test.className = '';
+        $test.classList.remove('test');
     }
 }
 $aboutToggle.addEventListener('click', () => {
@@ -25,7 +25,7 @@ $aboutToggle.addEventListener('click', () => {
         $about.classList.toggle('collapsed');
         $resume.classList.add('collapsed');
         $contact.classList.add('collapsed');
-        $test.className = '';
+        $test.classList.remove('test');
     }
 });
 $resumeToggle.addEventListener('click', () => {
@@ -33,7 +33,7 @@ $resumeToggle.addEventListener('click', () => {
         $resume.classList.toggle('collapsed');
         $about.classList.add('collapsed');
         $contact.classList.add('collapsed');
-        $test.className = '';
+        $test.classList.remove('test');
     }
 });
 $contactToggle.addEventListener('click', () => {
@@ -41,7 +41,7 @@ $contactToggle.addEventListener('click', () => {
         $contact.classList.toggle('collapsed');
         $resume.classList.add('collapsed');
         $about.classList.add('collapsed');
-        $test.className = '';
+        $test.classList.remove('test');
     }
 });
 
@@ -74,7 +74,7 @@ function colorMenu() {
 
 let $ham = document.querySelector('.menu_hamburger i img');
 let $test = document.querySelector('.wrapper header');
-$test.className = '';
+$test.classList.remove('test');
 $ham.addEventListener('click', ()=>{
     $test.classList.toggle('test');
 })
