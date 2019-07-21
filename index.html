@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="assets/css/media_desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="assets/css/media_smartab.css" media="screen and (max-width: 769px)">
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=es5%2Ces6"></script>
 </head>
 
 <body>
@@ -16,17 +17,17 @@
 
 
         <header class=''>
-            <img src="assets/img/avatar.jpg" alt="avatar">
+            <img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
             <h1>DON-PIERRE TARQUIN</h1>
             <nav>
                 <ul>
-                    <li><a href="#about" id="about-toggle"><img src="assets/img/icons8-utilisateur-100-white.png"
-                                alt="">About Me</a>
+                    <li><a href="#about" id="about-toggle" tabindex="1"><img
+                                src="assets/img/icons8-utilisateur-100-white.png" alt="">About Me</a>
                     </li>
-                    <li><a href="#resume" id="resume-toggle"><img src="assets/img/icons8-badge-100-white.png"
-                                alt="">Resume</a></li>
-                    <li><a href="#contact" id="contact-toggle"><img src="assets/img/icons8-téléphone-100-white.png"
-                                alt="">Contact</a></li>
+                    <li><a href="#resume" id="resume-toggle" tabindex="2"><img
+                                src="assets/img/icons8-badge-100-white.png" alt="">Resume</a></li>
+                    <li><a href="#contact" id="contact-toggle" tabindex="3"><img
+                                src="assets/img/icons8-téléphone-100-white.png" alt="">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -107,6 +108,24 @@
                     <img src="assets/img/icons8-badge-100.png" alt="">
                     resume
                 </h1>
+
+                <aside>
+                    <div class="event">
+                        <div class="ribbon_education"></div>
+                        <h2>Education</h2>
+                    </div>
+                    <div class="event">
+                       <h3>truc</h3>
+                       <h4>truc</h4>
+                       <h5>truc</h5>
+                       <p>truc</p> 
+                    </div>
+                    <div class="event">
+                        <div class="ribbon_work"></div>
+                        <h2>Work</h2>
+                    </div>
+                </aside>
+
             </section>
             <section class="navbar contact">
                 <h1>
@@ -116,7 +135,16 @@
             </section>
         </main>
     </div>
-    <script src="script.js"></script>
+
+
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+            document.write('<script src="scriptIE.js"><\/script>');
+        } else {
+            document.write('<script src="script.js"><\/script>');
+        }
+    </script>
+
 </body>
 
 </html>

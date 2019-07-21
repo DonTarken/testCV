@@ -3,7 +3,8 @@
 *, *::before, *::after{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 html, body {
     height: 100%;
@@ -15,6 +16,8 @@ html, body {
     min-height: 100%;
     width: 100%;
     /* border: 1px solid red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 /* ......................................................... */
@@ -22,13 +25,18 @@ html, body {
 /* ......................................................... */
 header{
     width: 0px;
+    background-color: #1c262b;
     /* border: 1px solid yellow; */
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
     transition: width 0.5s;
     overflow: auto;
 }
 .test{
     width: 140px;
     background-color: #1c262b;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
     transition: width 0.5s;
 }
 /* ......................................................... */
@@ -42,9 +50,16 @@ header img{
 }
 header ul{
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     margin: 0;
 }
@@ -65,9 +80,16 @@ header ul li a{
     font-size: 12px;
     letter-spacing: .07em;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px 0;
 }
 .hideColorMenu{
@@ -97,9 +119,14 @@ main{
     min-height: 56px;
     background-color: #1c262b;
     /* border: 2px solid red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 
@@ -111,8 +138,12 @@ main{
     height: 100%;
     width: 50px;
     border-right: 2px solid rgba(255, 255, 255, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .menu_hamburger img{
     height: 35px;
@@ -123,11 +154,20 @@ main{
 
 .navbar{
     height: 100%;
+    -webkit-transition: height 0.8s;
+    -o-transition: height 0.8s;
     transition: height 0.8s;
     /* border: 1px solid blue; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow-x: hidden;
     overflow-y: scroll;
 
@@ -139,9 +179,16 @@ section{
     font-size: 2em;
     font-weight: bold;
     letter-spacing: -4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: .6em 0;
     /* border: 1px solid black; */
 }
@@ -166,14 +213,47 @@ section{
 
 .collapsed{
     height: 0;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
     transition: height 1s;
 }
-p{
-    max-width: 90%;
+.about p{
+    max-width: 500px;
+    width: 90%;
     text-align: justify;
     text-justify: inter-word;
 }
-
+aside{
+    width: 60%;
+    min-height: 1000px;
+    position: relative;
+    
+}
+aside::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: rgba(255, 255, 255, 0.5);
+}
+aside div .ribbon{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: -23px;
+}
+aside .ribbon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #8ACB82;
+}
+aside div h2{
+    width: 200px;
+    margin-left: 70px;
+}
 /* ......................................................... */
 /* ......................................................... */
 /* ......................................................... */
