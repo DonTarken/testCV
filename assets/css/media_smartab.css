@@ -190,7 +190,7 @@ section{
         -ms-flex-align: center;
             align-items: center;
     padding: .6em 0;
-    min-height: calc(2em + 20px);
+    min-height: calc(4em + 20px);
     /* border: 1px solid black; */
 }
 .about h1 img, .resume h1 img, .contact h1 img{
