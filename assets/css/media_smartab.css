@@ -228,7 +228,8 @@ aside{
     width: 60%;
     min-height: 1000px;
     position: relative;
-    
+    max-width: 1000px;
+    width: 90%;
 }
 aside::before{
     content: "";
